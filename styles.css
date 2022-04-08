@@ -9,7 +9,106 @@ body{
   color: black;
 }
 
-nav{
+.mainNav {
+  background: #efefef;
+  color: #1a1b18;
+  max-height: 70px;
+  position: relative;
+}
+.mainNav a {
+  text-decoration: none;
+}
+.mainNav .logo {
+	background: orange;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.5em;
+  height: 40px;
+  line-height: 1.697em;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  z-index: 0;
+  /*POSITION*/
+  position: relative;
+	left:0;
+}
+/* .mainNav .logo:hover {
+  background: #292938;
+} */
+/* .mainNav .logo:before {
+  content: "";
+  background: #3c91e6;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+} */
+.mainNav .logo a {
+  color: #efefef;
+}
+.mainNav .menu {
+  background: #efefef;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #efefef;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /*POSITION*/
+  position: absolute;
+  top: 60px;
+  right: 0;
+  left: 0;
+}
+.mainNav .menu a {
+  color: #292938;
+  border-bottom: 1px solid #efefef;
+  font-weight: bold;
+  display: block;
+  padding: 15px;
+}
+.mainNav .menu a:hover {
+  background: #292938;
+  color: #efefef;
+}
+.mainNav .navBars {
+  display: inline-block;
+  font-size: 1.7em;
+  line-height: 1.5em;
+  float: right;
+  /*USER SELECTION*/
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+#xBxHack {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -99999px;
+}
+#xBxHack:checked ~ nav .menu {
+  display: block;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.fa-shopping-bag{
+	float:right;
+	margin-top:-30px;
+	padding: 0px 10px;
+}
+
+/* nav{
   background: pink;
   text-align: center;
   font-family: helvetica, sans-serif;
@@ -26,15 +125,34 @@ nav a{
 nav a:hover{
   text-decoration: underline;
    color: grey;
-}
+} */
+
 img{
   width: 100%;
   /* remove height when I have an image */
   /* I can use max-width:100% also */
 }
 
+a{
+  text-decoration:none;
+}
 
+a:hover{
+  text-decoration:underline;
+  color:purple!important;
+}
 
+a:visited{
+  color:black;
+}
+
+.pink:hover{
+  color:white;
+}
+
+.pink{
+  color:pink;
+}
 .wrapper{
   width:100%;
   margin:auto;
@@ -92,7 +210,6 @@ img{
 width: 80%;
 display: flex;
 justify-content: center;
-flex-direction: column;
 align-items: center;
 background-color: white;
 padding-left: 50px;
@@ -105,9 +222,46 @@ flex-wrap: wrap;
 .flex-container div {
 text-align: center;
 line-height: 20px;
-
+flex-basis: 200px;
 }
 
 .top{
   text-align: center;
   align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .mainNav {
+    overflow: hidden;
+  }
+  .mainNav .navBars {
+    display: none;
+  }
+  .mainNav .container {
+    padding-top: 0;
+    padding-bottom: 0;
+		max-width:100%;
+/* 	Add max-width:100 to counter act the styles above media query so the links are all the way to the left */
+  }
+  .mainNav .logo {
+		display:block;
+		width:165px;
+    margin: 10px auto;
+/*  Add display block and a width and auto to margin for centering the logo		 */
+  }
+  .mainNav .menu {
+    display: block;
+    box-shadow: none;
+    border: none;
+    float: left;
+    /*POSITION*/
+    position: static;
+  }
+  .mainNav .menu li {
+    display: inline-block;
+  }
+  .mainNav .menu a {
+    border: none;
+    padding: 20px 10px;
+  }
+}
