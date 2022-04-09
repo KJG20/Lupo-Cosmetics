@@ -19,7 +19,6 @@ body{
   text-decoration: none;
 }
 .mainNav .logo {
-	background: orange;
   display: inline-block;
   color: #fff;
   font-size: 1.5em;
@@ -101,14 +100,16 @@ body{
   max-width: 960px;
   margin: 0 auto;
   padding: 10px;
+  height: 50px;
 }
+
 .fa-shopping-bag{
 	float:right;
 	margin-top:-30px;
 	padding: 0px 10px;
 }
 
-/* nav{
+nav{
   background: pink;
   text-align: center;
   font-family: helvetica, sans-serif;
@@ -125,7 +126,7 @@ nav a{
 nav a:hover{
   text-decoration: underline;
    color: grey;
-} */
+}
 
 img{
   width: 100%;
@@ -139,11 +140,11 @@ a{
 
 a:hover{
   text-decoration:underline;
-  color:purple!important;
+  color:#AA336A!important;
 }
 
 a:visited{
-  color:black;
+  color:pink;
 }
 
 .pink:hover{
@@ -182,28 +183,17 @@ a:visited{
 
 .hero h1{
   position:absolute;
-  top:150px;
+  top:10px;
   left:150px;
   color:pink;
 }
 
-.bestsellers{
-  width:100%;
-  background: url("britaylor2.jpg");
-  height:400px;
-  background-position:center;
-  background-size:cover;
-  text-align:center;
-  position:relative;
-}
-
 .bestsellers h2{
   position:absolute;
-  top:150px;
+  top:550px;
   left:160px;
   color:pink;
   font-size:35px;
-
 }
 
 .flex-container {
@@ -212,11 +202,13 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color: white;
+padding-top:70px;
 padding-left: 50px;
 padding-right: 50px;
 margin-left: auto;
 margin-right: auto;
 flex-wrap: wrap;
+height: 400px;
 }
 
 .flex-container div {
@@ -224,6 +216,54 @@ text-align: center;
 line-height: 20px;
 flex-basis: 200px;
 }
+
+.new {
+text-align: center;
+line-height: 20px;
+flex-basis: 150px;
+}
+/* START CONTACT PAGE STYLES */
+.float{
+    float:left;
+    width:43%;
+    padding:2%;
+    margin-right:2%;
+}
+
+.contact-form{
+
+}
+.contact-form input{
+  height: 25px;
+  padding-left:8px;
+}
+
+.contact-form textarea{
+  height: 100px;
+  max-width:100%;
+}
+
+.contact-form input, .contact-form textarea{
+  display: block;
+  width: 100%;
+  margin-top:10px;
+  margin-bottom:10px;
+  border: 1px grey solid;
+  border-radius: 3px;
+  font-size: 1.1em;
+}
+
+.contact-form input[type="submit"]{
+  background-color: pink;
+  border:none;
+  width:150px;
+  padding-top:3px;
+  padding-bottom:5px;
+  margin-left:auto;
+  height: 30px;
+}
+
+/* END CONTACT PAGE STYLES */
 
 .top{
   text-align: center;
