@@ -12,7 +12,7 @@ body{
 .mainNav {
   background: #efefef;
   color: #1a1b18;
-  max-height: 70px;
+  height: 120px;
   position: relative;
 }
 .mainNav a {
@@ -20,31 +20,8 @@ body{
 }
 .mainNav .logo {
   display: inline-block;
-  color: #fff;
-  font-size: 1.5em;
-  height: 40px;
-  line-height: 1.697em;
-  letter-spacing: -2px;
-  text-transform: uppercase;
-  padding: 0 10px;
-  z-index: 0;
-  /*POSITION*/
-  position: relative;
-	left:0;
 }
-/* .mainNav .logo:hover {
-  background: #292938;
-} */
-/* .mainNav .logo:before {
-  content: "";
-  background: #3c91e6;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-} */
+
 .mainNav .logo a {
   color: #efefef;
 }
@@ -58,6 +35,7 @@ body{
   padding: 0;
   text-align: center;
   /*POSITION*/
+  z-indx:1;
   position: absolute;
   top: 60px;
   right: 0;
@@ -130,7 +108,6 @@ nav a:hover{
 
 img{
   width: 100%;
-  /* remove height when I have an image */
   /* I can use max-width:100% also */
 }
 
@@ -182,16 +159,12 @@ a:visited{
 }
 
 .hero h1{
-  position:absolute;
-  top:10px;
-  left:150px;
+  text-align:center;
   color:pink;
 }
 
 .bestsellers h2{
-  position:absolute;
-  top:550px;
-  left:160px;
+  text-align:center;
   color:pink;
   font-size:35px;
 }
