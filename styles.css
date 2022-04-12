@@ -24,6 +24,7 @@ body{
 
 .mainNav .logo a {
   color: #efefef;
+  padding:0;
 }
 .mainNav .menu {
   background: #efefef;
