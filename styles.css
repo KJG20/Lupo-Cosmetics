@@ -162,6 +162,9 @@ a:visited{
 .hero h1{
   text-align:center;
   color:pink;
+   margin: 0;
+    top: 80px;
+    position: relative;
 }
 
 .bestsellers h2{
