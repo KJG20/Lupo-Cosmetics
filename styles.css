@@ -92,7 +92,9 @@ margin:0 auto;
 	margin:0;
 	display:inline;
 }
-
+.float-right{
+	float:right;
+}
 nav{
   background: pink;
   text-align: center;
@@ -253,9 +255,7 @@ flex-basis: 150px;
 }
 
 @media screen and (min-width: 600px) {
-	.float-right{
-		float:right;
-	}
+	
   .mainNav {
     overflow: hidden;
   }
