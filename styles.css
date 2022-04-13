@@ -12,7 +12,7 @@ body{
 .mainNav {
   background: #efefef;
   color: #1a1b18;
-  height: 120px;
+  height: 70px;
   position: relative;
 }
 .mainNav a {
@@ -41,7 +41,7 @@ margin:0 auto;
   padding: 0;
   text-align: center;
   /*POSITION*/
-  z-indx:1;
+  z-index:1;
   position: absolute;
   top: 60px;
   right: 0;
@@ -55,8 +55,8 @@ margin:0 auto;
   padding: 15px;
 }
 .mainNav .menu a:hover {
-  background: #292938;
-  color: #efefef;
+/*   background: #292938; */
+  color: #292938;
 }
 .mainNav .navBars {
   display: inline-block;
@@ -104,7 +104,7 @@ nav{
 nav a{
   padding: 20px;
   color: black;
-  margin-left: 20px;
+/*   margin-left: 20px; */
   display: inline-block;
   text-decoration: none;
 }
