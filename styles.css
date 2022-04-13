@@ -252,6 +252,9 @@ flex-basis: 150px;
 }
 
 @media screen and (min-width: 600px) {
+	.float-right{
+		float:right;
+	}
   .mainNav {
     overflow: hidden;
   }
@@ -265,7 +268,7 @@ flex-basis: 150px;
 /* 	Add max-width:100 to counter act the styles above media query so the links are all the way to the left */
   }
   .mainNav .logo {
-		display:block;
+		display:inline;
 		width:165px;
     margin: 10px auto;
 /*  Add display block and a width and auto to margin for centering the logo		 */
