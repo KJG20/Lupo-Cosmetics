@@ -19,7 +19,8 @@ body{
   text-decoration: none;
 }
 .mainNav .logo {
-  display: inline;
+
+	float:left;
 }
 
 .mainNav .logo a {
@@ -268,6 +269,7 @@ flex-basis: 150px;
 /* 	Add max-width:100 to counter act the styles above media query so the links are all the way to the left */
   }
   .mainNav .logo {
+	  float:none;
 		display:inline;
 		width:165px;
     margin: 10px auto;
