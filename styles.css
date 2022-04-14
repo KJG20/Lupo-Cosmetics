@@ -12,41 +12,24 @@ body{
 .mainNav {
   background: #efefef;
   color: #1a1b18;
-  max-height: 70px;
+  height: 70px;
   position: relative;
 }
 .mainNav a {
   text-decoration: none;
 }
 .mainNav .logo {
-  display: inline-block;
-  color: #fff;
-  font-size: 1.5em;
-  height: 40px;
-  line-height: 1.697em;
-  letter-spacing: -2px;
-  text-transform: uppercase;
-  padding: 0 10px;
-  z-index: 0;
-  /*POSITION*/
-  position: relative;
-	left:0;
+
+	float:left;
 }
-/* .mainNav .logo:hover {
-  background: #292938;
-} */
-/* .mainNav .logo:before {
-  content: "";
-  background: #3c91e6;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-} */
+
 .mainNav .logo a {
   color: #efefef;
+  padding:0;
+margin:0 auto;
+}
+.logo img{
+	width:60px;
 }
 .mainNav .menu {
   background: #efefef;
@@ -58,6 +41,7 @@ body{
   padding: 0;
   text-align: center;
   /*POSITION*/
+  z-index:1;
   position: absolute;
   top: 60px;
   right: 0;
@@ -71,8 +55,8 @@ body{
   padding: 15px;
 }
 .mainNav .menu a:hover {
-  background: #292938;
-  color: #efefef;
+/*   background: #292938; */
+  color: #292938;
 }
 .mainNav .navBars {
   display: inline-block;
@@ -104,11 +88,13 @@ body{
 }
 
 .fa-shopping-bag{
-	float:right;
-	margin-top:-30px;
 	padding: 0px 10px;
+	margin:0;
+	display:inline;
 }
-
+.float-right{
+	float:right;
+}
 nav{
   background: pink;
   text-align: center;
@@ -116,9 +102,9 @@ nav{
 }
 
 nav a{
-  padding: 20px;
+  padding: 10px 20px;
   color: black;
-  margin-left: 20px;
+/*   margin-left: 20px; */
   display: inline-block;
   text-decoration: none;
 }
@@ -130,7 +116,6 @@ nav a:hover{
 
 img{
   width: 100%;
-  /* remove height when I have an image */
   /* I can use max-width:100% also */
 }
 
@@ -182,16 +167,15 @@ a:visited{
 }
 
 .hero h1{
-  position:absolute;
-  top:10px;
-  left:150px;
+  text-align:center;
   color:pink;
+   margin: 0;
+    top: 80px;
+    position: relative;
 }
 
 .bestsellers h2{
-  position:absolute;
-  top:550px;
-  left:160px;
+  text-align:center;
   color:pink;
   font-size:35px;
 }
@@ -289,7 +273,8 @@ flex-basis: 150px;
 /* 	Add max-width:100 to counter act the styles above media query so the links are all the way to the left */
   }
   .mainNav .logo {
-		display:block;
+	  float:none;
+		display:inline;
 		width:165px;
     margin: 10px auto;
 /*  Add display block and a width and auto to margin for centering the logo		 */
@@ -309,4 +294,7 @@ flex-basis: 150px;
     border: none;
     padding: 20px 10px;
   }
+.fa-shopping-bag{
+	padding: 10px 10px;
+	}
 }
