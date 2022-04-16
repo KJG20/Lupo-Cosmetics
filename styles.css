@@ -95,6 +95,27 @@ margin:0 auto;
 .float-right{
 	float:right;
 }
+.map{
+  width:600px;
+  height:450px;
+  margin:auto;
+}
+@media only screen and (min-width:600px){
+  .map{
+    display:inline-block;
+    width:48%;
+    height:60vh;
+    margin-left:0;
+    margin-right:0;
+    vertical-align:top;
+
+  }
+  .group{
+    display:inline-block;
+    width:48%;
+    vertical-align: top;
+  }
+}
 nav{
   background: pink;
   text-align: center;
@@ -185,6 +206,28 @@ a:visited{
     top: 80px;
     position: relative;
 }
+.abouthero{
+  width:100%;
+  background: url("makeup4.jpg");
+  height:400px;
+  background-position:center;
+  background-size:cover;
+  text-align:center;
+  position:relative;
+  /* remove height when I have an image */
+  /* I can use max-width:100% also */
+}
+.shophero{
+  width:100%;
+  background: url("makeup5.jpg");
+  height:400px;
+  background-position:center;
+  background-size:cover;
+  text-align:center;
+  position:relative;
+  /* remove height when I have an image */
+  /* I can use max-width:100% also */
+}
 
 .bestsellers h1{
   text-align:center;
@@ -201,6 +244,7 @@ align-items: center;
 /* padding-top:70px; */
 padding-left: 50px;
 padding-right: 50px;
+/* padding-top:50px; */
 margin-left: auto;
 margin-right: auto;
 flex-wrap: wrap;
