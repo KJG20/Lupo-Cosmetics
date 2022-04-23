@@ -19,14 +19,13 @@ body{
   text-decoration: none;
 }
 .mainNav .logo {
-
 	float:left;
 }
 
 .mainNav .logo a {
   color: #efefef;
   padding:0;
-margin:0 auto;
+  margin:0 auto;
 }
 .logo img{
 	width:60px;
@@ -145,7 +144,7 @@ footer{
    margin-right: auto;
    display: block;
    width: 100%;
-   height: 60px;
+   height: 100px;
    background-color: pink;
    text-align: center;
    padding-top:20px;
@@ -172,10 +171,13 @@ a:visited{
 .pink{
   color:pink;
 }
+
 .wrapper{
   width:100%;
   margin:auto;
   padding:10px;
+  padding-left:0;
+  padding-right:0;
   background-color: pink;
   text-align: center;
 }
@@ -202,18 +204,19 @@ a:visited{
 .hero h1{
   text-align:center;
   color:pink;
-   margin: 0;
-    top: 80px;
-    position: relative;
+  margin: 0;
+  top: 80px;
+  position: relative;
 }
 .abouthero{
   width:100%;
-  background: url("makeup4.jpg");
+  background: url("makeup2.jpg");
   height:400px;
   background-position:center;
   background-size:cover;
   text-align:center;
   position:relative;
+  margin-bottom:20px;
   /* remove height when I have an image */
   /* I can use max-width:100% also */
 }
@@ -233,7 +236,33 @@ a:visited{
   text-align:center;
   color:pink;
   font-size:35px;
+  padding-top:30px;
 }
+
+.about h1{
+  padding-top:20px;
+  text-align:center;
+}
+
+.shopnow h1{
+  text-align:center;
+  padding-top:30px;
+}
+
+.aboutwrapper{
+  width: 85%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  /* background-color: black; */
+  line-height:25px;
+ }
+
+ .aboutwrapper p{
+   color:black;
+   text-align:center;
+ }
 
 .flex-container {
 width: 80%;
@@ -244,7 +273,7 @@ align-items: center;
 /* padding-top:70px; */
 padding-left: 50px;
 padding-right: 50px;
-/* padding-top:50px; */
+/* padding-top:10px; */
 margin-left: auto;
 margin-right: auto;
 flex-wrap: wrap;
@@ -257,7 +286,7 @@ flex-basis: 200px;
 }
 
 .flex-footer {
-width: 80%;
+width: 100%;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
@@ -270,8 +299,8 @@ flex-wrap: wrap;
 
 .flex-footer div {
 text-align: center;
-line-height: 20px;
-flex-basis: 200px;
+line-height: 40px;
+flex-basis: 300px;
 }
 
 .new {
@@ -312,17 +341,20 @@ flex-basis: 150px;
   margin-left:auto;
   height: 30px;
 }
-
 /* END CONTACT PAGE STYLES */
 
 .top{
   text-align: center;
   align-items: center;
+  padding-top:90px;
+  padding-bottom:20px;
 }
 
 .clearfix {
     clear: both;
     /*display: table; */
+    width: 90%;
+    margin:auto;
   }
   .clearfix::after{
     clear: both;
@@ -338,7 +370,7 @@ flex-basis: 150px;
 /* Desktop styles below */
 @media only screen and (min-width:700px) {
   .float{
-      float:left;
+      float:right;
       width:43%;
       padding:2%;
       margin-right:2%;
